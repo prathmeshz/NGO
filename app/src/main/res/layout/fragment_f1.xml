@@ -1,0 +1,58 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="demo.ngo.fragment.F1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/ic_menu_add" />
+    </RelativeLayout>
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/el"
+        app:el_duration="1000"
+        app:el_expanded="false"
+        app:el_parallax="0.5"
+        android:layout_below="@id/ll">
+        <include
+            layout="@layout/news_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/el"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/news" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

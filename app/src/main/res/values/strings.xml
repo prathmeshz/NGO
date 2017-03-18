@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NGO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="elvin">Mr. Elvin R. Baghele \n Y.C.C.E \n Batch-14-18 \n C-Tech</string>
+    <string name="ankush">Mr. Ankush Bisen \n S.B.J.I.T.M.R \n Batch 14-18 \n IT</string>
+    <string name="prathmesh">Mr. Prathmesh Zade \n G.H.Raisoni \n Batch 14-18 \n IT</string>
+</resources>
