@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
-
+///Teating git changes
     @Override
     public void login(String type) {
         switch (type)
