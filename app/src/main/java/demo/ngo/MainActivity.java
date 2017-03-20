@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this,TabActivity.class));
         }
     }
+    //Testing from android git update
 
     @Override
     public void onClick(View v) {
