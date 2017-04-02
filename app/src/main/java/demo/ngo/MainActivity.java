@@ -2,10 +2,12 @@ package demo.ngo;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.FirebaseApp;
@@ -24,7 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(this);
-
+        TextView text = (TextView) findViewById(R.id.textView);
+        Typeface tf = Typeface.createFromAsset(getAssets(), "colonna.ttf");
+        text.setTypeface(tf);
         sign_in= (Button) findViewById(R.id.sign_in);
         gs= (Button) findViewById(R.id.GS);
         gs.setOnClickListener(this);

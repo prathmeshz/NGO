@@ -5,20 +5,10 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?android:attr/colorForeground"
     tools:context="demo.ngo.MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/icon"
-        android:layout_marginTop="94dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginStart="54dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
 
     <LinearLayout
 
@@ -38,8 +28,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
+
             android:background="#232e34"
-            android:text="SIGN IN"
+            android:text="@string/signin"
             android:textColor="#449f83"
             android:textSize="17sp" />
 
@@ -61,14 +52,32 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="19dp"
-        android:layout_toRightOf="@+id/imageView6"
+
         android:text="NGO"
-        android:textSize="50sp" />
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="129dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginEnd="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/icon"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginTop="111dp" />
 
 </RelativeLayout>
