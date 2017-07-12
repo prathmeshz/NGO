@@ -1,6 +1,5 @@
 package demo.ngo;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(this);
         TextView text = (TextView) findViewById(R.id.textView);
-        Typeface tf = Typeface.createFromAsset(getAssets(), "colonna.ttf");
+        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/colonna.ttf");
         text.setTypeface(tf);
         sign_in= (Button) findViewById(R.id.sign_in);
         gs= (Button) findViewById(R.id.GS);

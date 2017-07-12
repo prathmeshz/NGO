@@ -32,7 +32,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsHolder> {
     }
     @Override
     public NewsHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new NewsHolder(LayoutInflater.from(context).inflate(R.layout.custom_layout_news,null));
+        return new NewsHolder(LayoutInflater.from(context).inflate(R.layout.new_custom_layout,null));
     }
 
     @Override
@@ -40,9 +40,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsHolder> {
     {
         if(!list.isEmpty()) {
             HashMap<String, String> hashMap = list.get(position);
-            holder.head.setText(hashMap.get("headline"));
-            holder.desc.setText(hashMap.get("description"));
-            holder.name.setText(hashMap.get("name"));
+//            holder.head.setText(hashMap.get("headline"));
+//            holder.desc.setText(hashMap.get("description"));
+//            holder.name.setText(hashMap.get("name"));
+
         }
     }
 

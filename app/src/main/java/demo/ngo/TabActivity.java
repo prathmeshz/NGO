@@ -1,5 +1,6 @@
 package demo.ngo;
 
+import android.content.Context;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -9,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 
 import demo.ngo.adapter.TabAdapter;
 import demo.ngo.fragment.DrawerFragment;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class TabActivity extends AppCompatActivity {
 
@@ -17,6 +19,12 @@ public class TabActivity extends AppCompatActivity {
     Toolbar toolbar;
     DrawerFragment drawerFragment;
     DrawerLayout drawerLayout;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
