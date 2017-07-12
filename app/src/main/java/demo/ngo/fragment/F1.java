@@ -43,6 +43,7 @@ public class F1 extends Fragment implements View.OnClickListener {
     long count;
     FirebaseDatabase database;
     DatabaseReference counterRef,user;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
