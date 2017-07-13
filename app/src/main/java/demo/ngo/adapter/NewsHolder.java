@@ -18,10 +18,10 @@ public class NewsHolder extends RecyclerView.ViewHolder
     public NewsHolder(View itemView)
     {
         super(itemView);
-        head= (TextView) itemView.findViewById(R.id.news_head);
-        desc= (TextView) itemView.findViewById(R.id.des);
-        name= (TextView) itemView.findViewById(R.id.name);
-        button= (Button) itemView.findViewById(R.id.button4);
+        head= (TextView) itemView.findViewById(R.id.new_news_head);
+        desc= (TextView) itemView.findViewById(R.id.desc);
+        name= (TextView) itemView.findViewById(R.id.new_news_name);
+        //button= (Button) itemView.findViewById(R.id.button4);
 
     }
 }

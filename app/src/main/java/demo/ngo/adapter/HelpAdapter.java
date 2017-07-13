@@ -41,20 +41,20 @@ public class HelpAdapter extends RecyclerView.Adapter<NewsHolder> {
     public void onBindViewHolder(NewsHolder holder, final int position)
     {
         if(!list.isEmpty()) {
-            final HashMap<String, String> hashMap = list.get(position);
-            holder.head.setText(hashMap.get("name"));
-            holder.desc.setText(hashMap.get("title"));
-            holder.name.setText(hashMap.get("description"));
-            if (help.equals("help"))
-            {
-                holder.button.setVisibility(View.VISIBLE);
-                holder.button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        listener.click(position,hashMap);
-                    }
-                });
-            }
+//            final HashMap<String, String> hashMap = list.get(position);
+//            holder.head.setText(hashMap.get("name"));
+//            holder.desc.setText(hashMap.get("title"));
+//            holder.name.setText(hashMap.get("description"));
+//            if (help.equals("help"))
+//            {
+//                holder.button.setVisibility(View.VISIBLE);
+//                holder.button.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        listener.click(position,hashMap);
+//                    }
+//                });
+//            }
         }
     }
 

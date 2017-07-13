@@ -40,9 +40,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsHolder> {
     {
         if(!list.isEmpty()) {
             HashMap<String, String> hashMap = list.get(position);
-//            holder.head.setText(hashMap.get("headline"));
-//            holder.desc.setText(hashMap.get("description"));
-//            holder.name.setText(hashMap.get("name"));
+            holder.head.setText(hashMap.get("headline"));
+            holder.desc.setText(hashMap.get("description"));
+            holder.name.setText("Posted By - " +hashMap.get("name"));
 
         }
     }

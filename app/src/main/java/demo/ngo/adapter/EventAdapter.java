@@ -38,12 +38,12 @@ public class EventAdapter extends RecyclerView.Adapter<NewsHolder> {
     @Override
     public void onBindViewHolder(NewsHolder holder, int position)
     {
-        if(!list.isEmpty()) {
-            HashMap<String, String> hashMap = list.get(position);
-            holder.head.setText(hashMap.get("host"));
-            holder.desc.setText(hashMap.get("title"));
-            holder.name.setText(hashMap.get("description"));
-        }
+//        if(!list.isEmpty()) {
+//            HashMap<String, String> hashMap = list.get(position);
+//            holder.head.setText(hashMap.get("host"));
+//            holder.desc.setText(hashMap.get("title"));
+//            holder.name.setText(hashMap.get("description"));
+//        }
     }
 
     @Override
